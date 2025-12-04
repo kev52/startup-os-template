@@ -1,0 +1,13 @@
+# Decisions Directory
+
+Document important decisions here.
+
+Naming convention: `YYYY-MM-DD_[decision-name].md`
+
+Include:
+- Context (why this decision came up)
+- Options considered
+- Decision made
+- Rationale
+- Expected outcome
+

@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+vendor/
+.pnp.*
+.yarn/*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+
+# Secrets (never commit these!)
+*.pem
+*.key
+secrets/
+credentials/
+
+# Local development
+.local/
+tmp/
+temp/
+
+# MkDocs build output
+site/
+
+# Package locks (optional - uncomment if not tracking)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+

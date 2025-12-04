@@ -1,0 +1,8 @@
+# Meeting Notes Directory
+
+Store meeting notes here.
+
+Naming convention: `YYYY-MM-DD_[meeting-type]_[topic].md`
+
+Example: `2024-01-15_customer_acme_discovery.md`
+

@@ -1,0 +1,12 @@
+# Pivot History Directory
+
+Document pivots here with rationale and learnings.
+
+Naming convention: `YYYY-MM-DD_[pivot-name].md`
+
+Include:
+- What changed
+- Why we pivoted
+- What we learned
+- Results
+

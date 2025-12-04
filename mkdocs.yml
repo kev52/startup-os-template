@@ -1,0 +1,221 @@
+# Startup OS Documentation
+# Auto-deploys to GitHub Pages on push to main
+
+site_name: Startup OS
+site_description: A Git-powered command center for building startups
+site_url: https://yourusername.github.io/your-project  # Update with your GitHub username
+repo_url: https://github.com/yourusername/your-project  # Update with your repo URL
+repo_name: your-project
+
+# Documentation source folder (uses symlinks to actual content)
+docs_dir: docs
+
+# Theme Configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    # Navigation
+    - navigation.instant          # Instant loading
+    - navigation.instant.progress # Progress indicator
+    - navigation.tracking         # URL updates with scroll
+    - navigation.tabs            # Top-level sections as tabs
+    - navigation.tabs.sticky     # Tabs stay visible
+    - navigation.sections        # Render sections as groups
+    - navigation.expand          # Expand all sections
+    - navigation.indexes         # Section index pages
+    - navigation.top             # Back to top button
+    
+    # Search
+    - search.suggest             # Search suggestions
+    - search.highlight           # Highlight search terms
+    - search.share               # Share search results
+    
+    # Content
+    - content.tabs.link          # Link content tabs
+    - content.code.copy          # Copy code button
+    
+    # Table of contents
+    - toc.follow                 # TOC follows scroll
+  
+  icon:
+    repo: fontawesome/brands/github
+  
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+  - tags                         # Tag support
+
+# Markdown Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition                   # Callouts/alerts
+  - attr_list                    # Add attributes to elements
+  - def_list                     # Definition lists
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  
+  # PyMdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details             # Collapsible sections
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra CSS/JS
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/your-project
+  generator: false  # Hide "Made with Material for MkDocs"
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  
+  - 🧠 Why (Start Here):
+    - 00_why/index.md
+    - Why We Exist: 00_why/why.md
+    - Vision: 00_why/vision.md
+    - Principles: 00_why/principles.md
+  
+  - 🎯 Strategy:
+    - 01_strategy/index.md
+    - Diagnosis: 01_strategy/diagnosis.md
+    - Guiding Policy: 01_strategy/guiding_policy.md
+    - Coherent Actions: 01_strategy/coherent_actions.md
+    - Competitive Landscape: 01_strategy/competitive_landscape.md
+  
+  - 🔍 Discovery:
+    - 02_discovery/index.md
+    - Customers:
+      - Personas: 02_discovery/customers/personas.md
+      - Segments: 02_discovery/customers/segments.md
+      - Interview Template: 02_discovery/customers/interview_template.md
+    - Problems:
+      - Problem Space: 02_discovery/problems/problem_space.md
+      - Jobs to Be Done: 02_discovery/problems/jobs_to_be_done.md
+    - Opportunities:
+      - Opportunity Tree: 02_discovery/opportunities/opportunity_tree.md
+    - Assumptions:
+      - Assumption Map: 02_discovery/assumptions/assumption_map.md
+  
+  - 📦 Product:
+    - 03_product/index.md
+    - Product Vision: 03_product/product_vision.md
+    - PR/FAQ: 03_product/pr_faq.md
+    - Product Principles: 03_product/product_principles.md
+    - Hook Model: 03_product/hook_model.md
+    - Roadmap: 03_product/roadmap.md
+  
+  - 📊 Validation:
+    - 04_validation/index.md
+    - Current Stage: 04_validation/current_stage.md
+    - Stages:
+      - Search: 04_validation/stages/00_search.md
+      - Validation: 04_validation/stages/01_validation.md
+      - Efficiency: 04_validation/stages/02_efficiency.md
+      - Scale: 04_validation/stages/03_scale.md
+    - Metrics:
+      - North Star: 04_validation/metrics/north_star.md
+      - Dashboard: 04_validation/metrics/dashboard.md
+  
+  - 💼 Business:
+    - 05_business/index.md
+    - Value Proposition: 05_business/value_proposition.md
+    - Business Model Canvas: 05_business/business_model_canvas.md
+    - Monetization: 05_business/monetization.md
+    - Go to Market: 05_business/go_to_market.md
+    - Legal:
+      - Privacy Policy: 05_business/legal/privacy.md
+      - Terms of Service: 05_business/legal/terms.md
+  
+  - 🎨 Design:
+    - 06_design/index.md
+    - Design Principles: 06_design/design_principles.md
+    - Design System: 06_design/design_system.md
+  
+  - ⚙️ Engineering:
+    - 07_engineering/index.md
+    - Architecture: 07_engineering/architecture.md
+    - Tech Stack: 07_engineering/tech_stack.md
+    - ADRs:
+      - Template: 07_engineering/adrs/000_template.md
+  
+  - 📈 Growth:
+    - 08_growth/index.md
+    - Marketing:
+      - Positioning: 08_growth/marketing/positioning.md
+      - Messaging: 08_growth/marketing/messaging.md
+      - Channels: 08_growth/marketing/channels.md
+  
+  - 🏢 Operations:
+    - 09_operations/index.md
+    - Rituals: 09_operations/rituals.md
+    - Team:
+      - Roles: 09_operations/team/roles.md
+      - Org Chart: 09_operations/team/org_chart.md
+  
+  - 💰 Finance:
+    - 10_finance/index.md
+    - Budget: 10_finance/budget.md
+    - Metrics:
+      - Unit Economics: 10_finance/metrics/unit_economics.md
+  
+  - 📓 Journal:
+    - journal/index.md
+    - Weekly Updates: journal/weekly_updates.md
+
