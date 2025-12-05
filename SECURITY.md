@@ -5,7 +5,7 @@
 If you discover a security vulnerability, please report it responsibly:
 
 1. **Do NOT** open a public issue
-2. Email [security@example.com] with details
+2. Email kevin.luecke@me.com with details
 3. Include steps to reproduce if possible
 4. Allow time for us to respond before disclosure
 
