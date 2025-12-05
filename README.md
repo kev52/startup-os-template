@@ -31,7 +31,7 @@ Use an AI coding agent to interview you and set up your customized repo.
 **Step 1: Clone this template**
 
 ```bash
-git clone https://github.com/[org]/startup-os-template.git my-startup
+git clone https://github.com/kev52/startup-os-template.git my-startup
 cd my-startup
 ```
 
