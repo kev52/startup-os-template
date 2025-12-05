@@ -221,6 +221,40 @@ Examples:
 
 ---
 
+## Documentation Site
+
+This template includes [MkDocs](https://www.mkdocs.org/) with [Material theme](https://squidfunk.github.io/mkdocs-material/) for building a beautiful documentation site from your markdown files.
+
+### Local Development
+
+```bash
+# Install dependencies
+pip install -r requirements-docs.txt
+
+# Start local server (auto-reloads on changes)
+mkdocs serve
+
+# Build static site
+mkdocs build
+```
+
+The site will be available at `http://localhost:8000`.
+
+### Deployment Options
+
+> **Note:** GitHub Pages is public by default, which may not be suitable for confidential startup documentation.
+
+| Platform | Privacy | Cost | Notes |
+|----------|---------|------|-------|
+| **Cloudflare Pages** | Access policies available | Free | Best free option for private docs |
+| **Vercel** | Password protection | Pro plan | Easy setup |
+| **Netlify** | Team access controls | Pro plan | Good CI/CD integration |
+| **Self-hosted** | Full control | Varies | nginx, internal servers |
+
+**To deploy:** Run `mkdocs build` and upload the `site/` folder to your platform of choice.
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

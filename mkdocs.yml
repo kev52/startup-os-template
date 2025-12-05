@@ -1,11 +1,11 @@
 # Startup OS Documentation
-# Auto-deploys to GitHub Pages on push to main
+# See README.md for local development and deployment options
 
 site_name: Startup OS
 site_description: A Git-powered command center for building startups
-site_url: https://yourusername.github.io/your-project  # Update with your GitHub username
-repo_url: https://github.com/yourusername/your-project  # Update with your repo URL
-repo_name: your-project
+site_url: https://[your-domain]  # Update with your docs URL
+repo_url: https://github.com/[your-username]/[your-repo]  # Update with your repo URL
+repo_name: [your-repo]
 
 # Documentation source folder (uses symlinks to actual content)
 docs_dir: docs
@@ -119,7 +119,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/your-project
+      link: https://github.com/[your-username]/[your-repo]
   generator: false  # Hide "Made with Material for MkDocs"
 
 # Navigation Structure
