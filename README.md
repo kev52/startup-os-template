@@ -28,24 +28,34 @@ Everything version-controlled. Everything in one place.
 
 Use an AI coding agent to interview you and set up your customized repo.
 
-**Step 1: Clone this template**
+**Step 1: Create your repo from this template**
+
+1. Click the green **"Use this template"** button at the top of this page
+2. Select **"Create a new repository"**
+3. Name your repo (e.g., `my-startup`)
+4. Choose **Private** (recommended for startup docs)
+5. Click **"Create repository"**
+
+> **Why use the template button?** This creates an independent repo under your account. You won't accidentally push to the template repo, and you get a clean git history.
+
+**Step 2: Clone your new repo**
 
 ```bash
-git clone https://github.com/kev52/startup-os-template.git my-startup
-cd my-startup
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
 ```
 
-**Step 2: Open with your AI coding agent**
+**Step 3: Open with your AI coding agent**
 
 | Tool | Command |
 |------|---------|
 | **Cursor** | Open folder → Press `Cmd+I` (Mac) or `Ctrl+I` (Windows) |
-| **Claude Code** | `claude code my-startup/` |
+| **Claude Code** | `claude code YOUR-REPO-NAME/` |
 | **GitHub Copilot** | Open in VS Code → Use Copilot Chat |
 | **Windsurf** | Open folder → Use AI chat |
 | **ChatGPT/Claude Web** | Copy-paste the prompt manually |
 
-**Step 3: Initialize your Startup OS**
+**Step 4: Initialize your Startup OS**
 
 Paste this to your AI agent:
 
@@ -53,7 +63,7 @@ Paste this to your AI agent:
 Read WIZARD_PROMPT.md and help me set up my startup
 ```
 
-**Step 4: Complete the interview**
+**Step 5: Complete the interview**
 
 The AI will ask you questions about your startup:
 - Why does it need to exist?
@@ -63,7 +73,7 @@ The AI will ask you questions about your startup:
 
 Answer conversationally — the AI will create your customized documents.
 
-**Step 5: Start your journey**
+**Step 6: Start your journey**
 
 Begin with `03_product/pr_faq.md` — your future press release.
 
@@ -73,9 +83,10 @@ Begin with `03_product/pr_faq.md` — your future press release.
 
 If you prefer to set up manually:
 
-1. Clone this template
-2. Fill in the core documents (see "Documents to Start With" below)
-3. Use the templates in each folder as you progress
+1. Use the **"Use this template"** button to create your repo
+2. Clone your new repo locally
+3. Fill in the core documents (see "Documents to Start With" below)
+4. Use the templates in each folder as you progress
 
 ---
 
