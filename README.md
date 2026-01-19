@@ -7,7 +7,7 @@
 **No coding. No courses. No $2,000 cohorts.**
 Just answer questions and watch your strategy docs write themselves.
 
-[![Use this template](https://img.shields.io/badge/Use_this_template-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/new?template_name=startup-os-template&template_owner=YOUR-USERNAME)
+[![Use this template](https://img.shields.io/badge/Use_this_template-238636?style=for-the-badge&logo=github&logoColor=white)](https://github.com/new?template_name=startup-os-template&template_owner=kev52)
 
 </div>
 
@@ -161,8 +161,8 @@ The AI will guide you through everything.
 If you're comfortable with the terminal:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-cd YOUR-REPO
+git clone https://github.com/kev52/startup-os-template.git
+cd startup-os-template
 claude
 # Then ask: "Read WIZARD_PROMPT.md and help me set up my startup"
 ```
