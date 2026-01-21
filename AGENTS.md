@@ -1,6 +1,6 @@
-# Claude Code Instructions for Startup OS
+# AI Agent Instructions for Startup OS
 
-> **Sync Note:** Keep in sync with `AGENTS.md` (source of truth) and `.cursorrules`.
+> **Sync Note:** This file is the source of truth. Keep `.cursorrules` and `CLAUDE.md` in sync with this file.
 > 
 > Last updated: 2026-01-21
 
